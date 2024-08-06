@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Hero: React.FC = () => {
   return (
-    <section id="hero" className="relative z-40 bg-[#09111f] text-white py-20">
+    <section id="hero" className="relative z-40 bg-[#09111f] text-white mt-10">
       <div className="container mx-auto px-6 flex flex-col-reverse md:flex-row items-center justify-between">
         <div className="md:w-1/2 mb-12 md:mb-0">
           <motion.h1
