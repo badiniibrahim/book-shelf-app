@@ -31,6 +31,8 @@
 
 ## 📂 Repository Structure
 
+The repository structure section provides an overview of how files and directories are organized within the project. Here's a detailed explanation of each part:
+
 ```sh
 └── book-shelf-app/
     ├── .eslintrc.json
@@ -80,6 +82,105 @@
     ├── tsconfig.json
     └── yarn.lock
 ```
+
+## Explanation of Each Element:
+
+## .eslintrc.json
+
+    Configuration file for ESLint, which defines rules for linting JavaScript/TypeScript code.
+
+## .gitignore
+
+    Specifies files and directories that Git should ignore when committing code.
+
+## .vscode/
+
+    Contains configuration settings for the Visual Studio Code editor.
+        settings.json : Project-specific settings for VS Code.
+
+## README.md
+
+    This file, providing important information about the project.
+
+## app/
+
+    Contains files related to the Next.js application.
+        favicon.ico : The favicon for the web application.
+        globals.css : Global CSS file for application styles.
+        layout.tsx : Component for the application layout.
+        page.tsx : Component for the main page of the application.
+        providers.tsx : Components for context providers (e.g., theme context, global state).
+
+## components/
+
+    Contains React components used in the application.
+        shared/ : Components that are shared across the application.
+        ui/ : Reusable user interface (UI) components.
+
+## cypress/
+
+    Contains files and directories for end-to-end tests with Cypress.
+        e2e/ : Directory for end-to-end tests.
+
+    cypress.config.js
+    Configuration file for Cypress.
+
+## get-server-url.ts
+
+    Configuration or utility file for obtaining the server URL (possibly for API calls).
+
+## jest.config.js
+
+    Configuration file for Jest, a JavaScript testing framework.
+
+## jest.setup.js
+
+    Setup file for Jest, used for configuring the testing environment.
+
+## lib/
+
+    Contains utilities and reusable functions for the application.
+        utils.ts : File with utility functions.
+
+## next.config.mjs
+
+    Configuration file for Next.js, used to customize the framework's settings.
+
+## package.json
+
+    Project configuration file containing dependencies and npm/yarn scripts.
+
+## postcss.config.mjs
+
+    Configuration file for PostCSS, used for CSS transformations.
+
+## public/
+
+    Contains static files accessible publicly.
+        book.png, loader.svg, etc. : Images and static files used in the application.
+
+## src/
+
+    Contains the main source code for the application.
+        __tests__/ : Directory for unit tests.
+        domain/ : Domain entities and types.
+        hooks/ : Custom hooks used in the application.
+        infrastructure/ : Infrastructure-related code (e.g., API services).
+        lib/ : Project-specific utilities.
+        presentation/ : Presentation components and UI logic.
+        usecases/ : Use cases and business logic.
+
+## tailwind.config.ts
+
+    Configuration file for Tailwind CSS.
+
+## tsconfig.json
+
+    TypeScript configuration file.
+
+## yarn.lock
+
+    Yarn lock file for version locking of dependencies.
 
 ---
 
