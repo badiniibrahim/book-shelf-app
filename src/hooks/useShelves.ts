@@ -10,7 +10,16 @@ export function useShelfList() {
     error: shelvesError,
   } = useQuery({
     queryKey: ["shelves"],
-    queryFn: async () => await diContainer.getShelfList.execute(),
+    queryFn: async () => {
+      try {
+        return await diContainer.getShelfList.execute();
+      } catch (error) {
+        console.error("Error fetching shelf list:", error);
+        throw new Error("Failed to fetch shelf list.");
+      }
+    },
+    staleTime: 1000 * 60 * 5,
   });
+
   return { shelves, shelvesLoading, shelvesError };
 }

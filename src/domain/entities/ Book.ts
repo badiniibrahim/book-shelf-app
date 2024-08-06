@@ -7,7 +7,7 @@ export interface Author {
 export interface Book {
   id: string;
   title: string;
-  authors: Author[];
+  authors: ReadonlyArray<Author>;
   book: {
     id: string;
     slug: string;
@@ -15,5 +15,35 @@ export interface Book {
   image: string;
   description: string;
   isbn: string;
+  publisher: string;
+}
+
+export interface Book {
+  id: string;
+  title: string;
+  authors: ReadonlyArray<Author>;
+  book: {
+    id: string;
+    slug: string;
+  };
+  image: string;
+  description: string;
+  isbn: string;
+  publisher: string;
+}
+
+type ISBN = string;
+
+export interface Book {
+  id: string;
+  title: string;
+  authors: ReadonlyArray<Author>;
+  book: {
+    id: string;
+    slug: string;
+  };
+  image: string;
+  description: string;
+  isbn: ISBN;
   publisher: string;
 }

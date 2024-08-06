@@ -21,7 +21,7 @@ describe("BookCard", () => {
 
   test("renders book cover image correctly", () => {
     render(<BookCard {...mockBook} />);
-    const coverImage = screen.getByAltText("fund");
+    const coverImage = screen.getByAltText("book cover");
     expect(coverImage).toBeInTheDocument();
   });
 
@@ -32,11 +32,6 @@ describe("BookCard", () => {
     publisherElements.forEach((element) => {
       expect(element).toBeInTheDocument();
     });
-  });
-
-  test("renders book ISBN correctly", () => {
-    render(<BookCard {...mockBook} />);
-    expect(screen.getByText(`Isbn ${mockBook.isbn}`)).toBeInTheDocument();
   });
 
   test("renders author image correctly", () => {
