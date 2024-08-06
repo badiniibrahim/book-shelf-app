@@ -234,12 +234,6 @@ yarn cypress:run or yarn cypress:open
 
 This project is licensed under the `ℹ️  LICENSE-TYPE` License. See the [LICENSE-Type](LICENSE) file for additional info.
 
----
-
-## 👏 Acknowledgments
-
-`- ℹ️ List any resources, contributors, inspiration, etc.`
-
 [↑ Return](#Top)
 
 ---
